@@ -1,0 +1,9 @@
+-navbar.html i base e dahil ederken include kullan extend değil
+-navbar'a background color ver .navbar class'ı ile
+-users app i oluştur
+-main url'den users app yönlendirme yap urls.py da
+-register view'ı yaz register.html
+-templates/users klasör yapısı oluştur. 
+-usser app in içinde pizza appteki base.html i çağırabiliyoruz
+-link href {% url 'register' %}
+
