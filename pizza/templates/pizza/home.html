@@ -2,6 +2,21 @@
 {% load static %}
 {% block content %}
 
-<p>This area belongs to home page</p>
+<div class="home-bg">
+    <div class="msg d-flex justify-content-center">
+    {% if messages %} 
+        {% for message in messages %} 
+        
+            {% if message.tags == "info" %}
+                <div id="info" class="message rounded col-md-2 text-center ">{{ message }}</div>
+            {% else %}
+                <div id="success" class="message rounded col-md-2 text-center">{{ message }}</div>
+            {% endif %} 
+        {% endfor %} 
+        {% endif %}
+        </div>
+
+
+</div>
         
 {% endblock content %}

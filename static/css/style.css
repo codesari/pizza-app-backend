@@ -1,3 +1,29 @@
 .navbar{
     background: #EE1C25;
 }
+.home-bg{
+    height: 100vh;
+    
+    background-image: url("../images/pizza-bg.jpg");
+    background-size: cover; /* Arka planın tamamını kaplamasını sağlar */
+    background-position: center; /* Arka plan resminin ortalanmasını sağlar */
+    background-repeat: no-repeat; /* Arka plan resminin tekrarlanmamasını sağlar */
+}
+
+.message {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    
+}
+
+#info {
+    background-color: #cce5ff;
+    color: #004085;
+    
+}
+
+#success {
+    background-color: #d4edda;
+    color: #155724;
+}

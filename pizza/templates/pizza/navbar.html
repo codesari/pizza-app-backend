@@ -5,8 +5,27 @@
       <img src="{% static 'images/pizza-logo.avif' %}" alt="Logo" width="50" height="50" class="d-inline-block align-text-top">
      Pizza Center
     </a>
+    <a class="nav-link active" aria-current="page" href="#">Pizzas</a>
+    <ul class="navbar-nav">
+      
+      {% if user.is_authenticated %}
+        <div class="d-flex g-3">
+          <a class="nav-link active" aria-current="page" >Welcome,{{user.username}}</a>
+          <span class="mx-2"></span>
+        <a class="nav-link active" aria-current="page" href="{% url 'logout' %}" onclick="return confirm('Are you sure you want to log out?')">Logout</a>
+        </div>
+        {% else %}
+        <li class="nav-item d-flex g-3 ">
+          <a class="nav-link active" aria-current="page" href="{% url 'register' %}">Register</a>
+          <span class="mx-2"></span>
+          <a class="nav-link active" aria-current="page" href="{% url 'login' %}">Login</a>
+        </li>
+        {% endif %}
+      </ul>
   </div>
 </nav> 
+
+
 
 
 
